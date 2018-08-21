@@ -27,4 +27,18 @@ During the approval meeting, a study was suggested, to compare the shapes betwee
 
 Based on the plots, both normalization scenarios do not result in huge differences with respect to the background-only fit, and hence the difference between the background model resulting from sideband region and that from the whole range is not significant at all.
 
+------
+
+## Implementation of the sideband-only fit ##
+
+An attempt is made to do sideband-only fit in either ROOT or RooFit. 
+
+An [example macro](https://root.cern.ch/root/html/tutorials/fit/fitExclude.C.html) shows how an `binned` fit is performed to a histogram (TH1) excluding points in a given range.
+The resulting plot is 
+
+<img src="Fig/fitExclude_ROOTtutorial.png" alt="drawing" width="399" height="238"/>
+
+The modified macro 
+
+
 
