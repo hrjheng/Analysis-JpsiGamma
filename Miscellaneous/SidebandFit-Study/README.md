@@ -22,7 +22,6 @@ First of all, one should not mix the concepts of (1) "blind" analysis, and (2) t
 During the approval meeting, a study was suggested, to compare the shapes between the background-only fit and background-plus-signal fit in the full mass range. This study is valid given that the **background-plus-signal fit in the full mass range** is actually not too much different from **background-only components in sideband regions + signal component in signal region**, where the signal component takes care of the region, say,  $$ \pm 2\sigma $$ of the signal distribution (that is, the range containing ~95% of signal events).
 
 
-| ![Flowers](Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png) | ![Flowers](Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png) |
-| ![Flowers](Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png) | ![Flowers](Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png)|
+![Flowers](Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png | =150x50)
 
 Then we can still draw the conclusion, based on the plots attached previously, that the difference between the background model resulting from sideband region and that from the whole range is not significant at all.
