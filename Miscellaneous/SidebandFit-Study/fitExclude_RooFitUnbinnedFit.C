@@ -2,7 +2,7 @@
 
 using namespace RooFit;
 
-bool constparam = true;
+bool constparam = false;
 
 void fitExclude_RooFitUnbinnedFit()
 {

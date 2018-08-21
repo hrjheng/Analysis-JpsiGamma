@@ -66,7 +66,7 @@ A non-extended likelihood fit returns a wrong result when fitting multiple range
 
 <img src="Fig/rootForum_22635_extended.png" alt="drawing" width="399" height="338"/><img src="Fig/rootForum_22635_nonextended.png" alt="drawing" width="399" height="338"/>
 
-So based on the above studies, as long as one gives proper initial values for fit parameters, an unbinned maximum likelihood fit in sideband regions is doable. Macro `fitExclude_RooFitUnbinnedFit` performs such fit. The values of the parameters are taken from the results of binned fit.
+So based on the above studies, as long as one gives proper initial values for fit parameters, an unbinned maximum likelihood fit in sideband regions is doable. Macro `fitExclude_RooFitUnbinnedFit.C` performs such fit. The values of the parameters are taken from the results of binned fit.
 
 (One thing that is a bit annoying is the initial values of the parameters, which is hard to find proper ones. Apart from using values from binned fit, one may need to re-parametrize the Bernstein polynomial, or even use other kinds of function.)
 
