@@ -33,12 +33,27 @@ Based on the plots, both normalization scenarios do not result in huge differenc
 
 An attempt is made to do sideband-only fit in either ROOT or RooFit. 
 
-An [example macro](https://root.cern.ch/root/html/tutorials/fit/fitExclude.C.html) shows how an `binned` fit is performed to a histogram (TH1) excluding points in a given range.
-The resulting plot is 
+### Binned fit using TF1 ###
+An [example macro](https://root.cern.ch/root/html/tutorials/fit/fitExclude.C.html) (`fitExclude.C`) shows how an **binned** fit is performed to a histogram (TH1) excluding points in a given range.
+The resulting plot is shown below.
 
 <img src="Fig/fitExclude_ROOTtutorial.png" alt="drawing" width="399" height="238"/>
 
-The modified macro 
+The modified macro `fitExclude_TF1BinnedFit.C` applies the method on the H&rarr;J/&psi; &gamma; events. <span style="color:red"> Red </span> line shows the sideband-only fit, while <span style="color:blue"> blue </span> line shows the fit in full mass range.
+The used function is the Bernstein polynomial ([The class reference](https://root.cern.ch/doc/v608/classRooBernstein.html)), and the parametrization follows from this [source file (line 87~128)](https://root.cern.ch/doc/v608/RooBernstein_8cxx_source.html). The invariant masses are transformed such that they are in the range [0,1], where Bernstein basis polynomials are positive-definite. In this fit, a log likelihood method is used [1]. The &chi;<sup>2</sup>/NDF is also shown in the legend. As one can see, two fits are very similar.
 
+[1]  [User guides : Fitting Histograms](https://root.cern.ch/root/htmldoc/guides/users-guide/FittingHistograms.html)
+
+<img src="Fig/fitExclude_TF1BinnedFit.png" alt="drawing" width="399" height="338"/>
+
+
+### Unbinned fit using TF1 ###
+A tutorial showing how the unbinned maximum likelihood fit with ROOT::TF1 can be found [here](http://hep1.phys.ntu.edu.tw/~kfjack/lecture/hepstat/in3/inter-3.pdf). The macro in this tutorial is modified, and named as `example_06_modified.C` in this repository.
+
+
+<img src="Fig/example_06.png" alt="drawing" width="399" height="338"/>
+
+
+The implementation of unbinned maximum likelihood fit to sideband regions is not trivial, as described in this [forum post](https://sft.its.cern.ch/jira/browse/ROOT-8440).
 
 
