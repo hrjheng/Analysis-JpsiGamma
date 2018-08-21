@@ -48,12 +48,18 @@ The used function is the Bernstein polynomial ([The class reference](https://roo
 
 
 ### Unbinned fit using TF1 ###
-A tutorial showing how the unbinned maximum likelihood fit with ROOT::TF1 can be found [here](http://hep1.phys.ntu.edu.tw/~kfjack/lecture/hepstat/in3/inter-3.pdf). The macro in this tutorial is modified, and named as `example_06_modified.C` in this repository.
-
+A tutorial showing how to do unbinned maximum likelihood fit with ROOT::TF1 can be found [here](http://hep1.phys.ntu.edu.tw/~kfjack/lecture/hepstat/in3/inter-3.pdf). The macro in this tutorial is modified, and named as `example_06_modified.C` in this repository.
+In this modified code, the method to exclude events in signal region in `fitExclude.C` is implemented (see the [code here](https://github.com/hrjheng/Analysis-JpsiGamma/blob/master/Miscellaneous/SidebandFit-Study/example_06_modified.C#L9-L31)). 
+The resulting fit in sidebands region is shown in <span style="color:orange"> filled orange </span>. As one can see, the background component fit in sidebands gives almost the same background estimation as that from signal-plus-background fit in the full range. 
 
 <img src="Fig/example_06.png" alt="drawing" width="399" height="338"/>
 
+However, when applying this method to the H&rarr;J/&psi; &gamma; channel (macro : `UnbinnedTF1_exclude.C`), it doesn't seem to give reasonable fit, as shown below. A better parametrization would solve this issue.
+
+<img src="Fig/UnbinnedTF1_exclude.png" alt="drawing" width="399" height="338"/>
+
+### Unbinned fit to sidebands in RooFit ###
 
 The implementation of unbinned maximum likelihood fit to sideband regions is not trivial, as described in this [forum post](https://sft.its.cern.ch/jira/browse/ROOT-8440).
-
+A non-extended likelihood fit returns a wrong result when fitting multiple ranges, while the extended maximum likelihood fit with RooFit can give reasonable result. 
 
