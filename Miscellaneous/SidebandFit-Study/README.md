@@ -1,5 +1,6 @@
 # Sideband-Fit Study #
 
+## Brief overview ##
 During the review of SMP-17-012 analysis, there are several questions regarding the background method, especially for the non-resonant background.
 The estimation is as follows: 
 
@@ -61,8 +62,10 @@ However, when applying this method to the H&rarr;J/&psi; &gamma; channel (macro 
 ### Unbinned fit to sidebands in RooFit ###
 
 The implementation of unbinned maximum likelihood fit to sideband regions is not trivial, as described in this [forum post](https://sft.its.cern.ch/jira/browse/ROOT-8440).
-A non-extended likelihood fit returns a wrong result when fitting multiple ranges, while the extended maximum likelihood fit with RooFit can give reasonable result. This can be illustrated in the modified macro `rootForum_22635.C` provided in the forum post.
+A non-extended likelihood fit returns a wrong result when fitting multiple ranges, while the extended maximum likelihood fit with RooFit can give reasonable result. This can be illustrated in the modified macro `rootForum_22635.C` provided in the forum post. The left plot shows the fit from extended maximum likelihood fit, while the right one shows the failed fit from non-extended fit.
 
 <img src="Fig/rootForum_22635_extended.png" alt="drawing" width="399" height="338"/><img src="Fig/rootForum_22635_nonextended.png" alt="drawing" width="399" height="338"/>
 
+So based on the above studies, as long as one gives proper initial values for fit parameters, an unbinned maximum likelihood fit in sideband regions is doable. Macro `fitExclude_RooFitUnbinnedFit` performs such fit. 
 
+<img src="Fig/fitExclude_RooFitUnbinnedFit.png" alt="drawing" width="399" height="338"/>
