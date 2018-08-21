@@ -4,7 +4,7 @@ During the review of SMP-17-012 analysis, there are several questions regarding 
 The estimation is as follows: 
 
 1. Treat all the selected events in data as non-resonant background events.
-2. A function is chosen to fit m<sub>&mu&mu&gamma<\sub>; distribution for the whole range. (How to choose the function is not introduce here.)
+2. A function is chosen to fit m<sub>&mu;&mu;&gamma; distribution for the whole range. (How to choose the function is not introduce here.)
 3. The resulting fit is used as non-resonant model in the limit setting procedure.
 
 There are some issues,  
