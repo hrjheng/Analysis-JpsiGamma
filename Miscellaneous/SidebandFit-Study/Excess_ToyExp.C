@@ -10,7 +10,7 @@ void Excess_ToyExp(float Nsig, float Nbkg=10000.)
     RooMsgService::instance().setGlobalKillBelow(RooFit::FATAL);
     RooMsgService::instance().setSilentMode(true);
 
-	TFile *f = new TFile("minitree_2016_HJpsiG_AllRuns.root","READ");
+    TFile *f = new TFile("minitree_2016_HJpsiG_AllRuns.root","READ");
     TTree *t = (TTree*) f->Get("outTree");
     float m;
     t->SetBranchAddress("m_mmg", &m);
