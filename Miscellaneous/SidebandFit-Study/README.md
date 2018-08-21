@@ -54,12 +54,15 @@ The resulting fit in sidebands region is shown in <span style="color:orange"> fi
 
 <img src="Fig/example_06.png" alt="drawing" width="399" height="338"/>
 
-However, when applying this method to the H&rarr;J/&psi; &gamma; channel (macro : `UnbinnedTF1_exclude.C`), it doesn't seem to give reasonable fit, as shown below. A better parametrization would solve this issue.
+However, when applying this method to the H&rarr;J/&psi; &gamma; channel (macro : `UnbinnedTF1_exclude.C`), it doesn't seem to give reasonable fit, as shown below. A better parametrization would solve this issue. (For example, use the parameter values resulting from the binned fit results may do better job.) There is another problem, see the next section.
 
 <img src="Fig/UnbinnedTF1_exclude.png" alt="drawing" width="399" height="338"/>
 
 ### Unbinned fit to sidebands in RooFit ###
 
 The implementation of unbinned maximum likelihood fit to sideband regions is not trivial, as described in this [forum post](https://sft.its.cern.ch/jira/browse/ROOT-8440).
-A non-extended likelihood fit returns a wrong result when fitting multiple ranges, while the extended maximum likelihood fit with RooFit can give reasonable result. 
+A non-extended likelihood fit returns a wrong result when fitting multiple ranges, while the extended maximum likelihood fit with RooFit can give reasonable result. This can be illustrated in the modified macro `rootForum_22635.C` provided in the forum post.
+
+<img src="Fig/rootForum_22635_extended.png" alt="drawing" width="399" height="338"/><img src="Fig/rootForum_22635_nonextended.png" alt="drawing" width="399" height="338"/>
+
 
