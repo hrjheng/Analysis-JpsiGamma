@@ -21,12 +21,10 @@ First of all, one should not mix the concepts of (1) "blind" analysis, and (2) t
 
 During the approval meeting, a study was suggested, to compare the shapes between the background-only fit and background-plus-signal fit in the full mass range. This study is valid given that the **background-plus-signal fit in the full mass range** is actually not too much different from **background-only components in sideband regions + signal component in signal region**, where the signal component takes care of the region, say, &plusmn;2&sigma;<sub>eff</sub> of the signal distribution (that is, the range containing ~95% of signal events).
 
-2 Sets of studies are performed, one where the signal normalization is fixed to the 1&times; expected yield (top figure), while the other one (bottom figure) the signal normalization is allowed floating. 
+2 Sets of studies are performed, one where the signal normalization is fixed to the 1&times; expected yield (top figure), while the other one (bottom figure) the signal normalization is allowed floating. (Here the results from H&rarr;J/&psi; &gamma; channel are shown.)
 
-<img src="Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/>
+<img src="Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/><img src="Fig/NotFixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/> 
 
-<img src="Fig/NotFixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/> 
+Based on the plots, both normalization scenarios do not result in huge differences with respect to the background-only fit, and hence the difference between the background model resulting from sideband region and that from the whole range is not significant at all.
 
-As one can see, both normalization scenarios do not result in significant differences with respect to the background-only fit. 
 
-Then we can still draw the conclusion, based on the plots attached previously, that the difference between the background model resulting from sideband region and that from the whole range is not significant at all.
