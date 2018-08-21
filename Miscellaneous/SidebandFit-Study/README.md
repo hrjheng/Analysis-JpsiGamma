@@ -19,8 +19,14 @@ There are some issues,
 
 First of all, one should not mix the concepts of (1) "blind" analysis, and (2) the background model estimation from sideband region. The "blind" analysis is that the experimental results, in the signal (or searched) region defined beforehand, are hidden from the analyzers, until the analysis techniques are fixed and all analyzers agree that those used methods are appropriate. To estimate the background in the signal/searched region, one should always use the events in the sideband region(s), which is(are) also defined beforehand. Therefore in our case, the strategy to the background estimate is not correct at all.  
 
-During the approval meeting, a study was suggested, to compare the shapes between the background-only fit and background-plus-signal fit in the full mass range. This study is valid given that the **background-plus-signal fit in the full mass range** is actually not too much different from **background-only components in sideband regions + signal component in signal region**, where the signal component takes care of the region, say, $ \pm 2\sigma $ of the signal distribution (that is, the range containing ~95% of signal events).
+During the approval meeting, a study was suggested, to compare the shapes between the background-only fit and background-plus-signal fit in the full mass range. This study is valid given that the **background-plus-signal fit in the full mass range** is actually not too much different from **background-only components in sideband regions + signal component in signal region**, where the signal component takes care of the region, say, &plusmn;2&sigma;<sub>eff</sub> of the signal distribution (that is, the range containing ~95% of signal events).
+
+2 Sets of studies are performed, one where the signal normalization is fixed to the 1&times; expected yield (top figure), while the other one (bottom figure) the signal normalization is allowed floating. 
 
 <img src="Fig/FixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/>
+
+<img src="Fig/NotFixSignal/BkgSigFit_HJpsiG_Inclusive_Bernstein2.png" alt="drawing" width="398" height="286"/> 
+
+As one can see, both normalization scenarios do not result in significant differences with respect to the background-only fit. 
 
 Then we can still draw the conclusion, based on the plots attached previously, that the difference between the background model resulting from sideband region and that from the whole range is not significant at all.
