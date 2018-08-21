@@ -72,6 +72,7 @@ So based on the above studies, as long as one gives proper initial values for fi
 
 <img src="Fig/fitExclude_RooFitUnbinnedFit.png" alt="drawing" width="399" height="338"/>
 
+[2] There is a similar post in [ROOT forum](https://root-forum.cern.ch/t/fitting-multiple-subranges-of-roodataset/6807/5).
 
 ## What would happen if there is an excess in data when we perform the fit in the whole range? ##
 
